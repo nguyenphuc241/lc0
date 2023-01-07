@@ -48,7 +48,7 @@ std::string GetLc0CacheDirectory() {
 
 TrainingDataWriter::TrainingDataWriter(int game_id) {
   static std::string directory =
-      GetLc0CacheDirectory() + "data-" + Random::Get().GetString(12);
+      "/content/drive/MyDrive/" + "data-" + Random::Get().GetString(12);
   // It's fine if it already exists.
   CreateDirectory(directory.c_str());
 
